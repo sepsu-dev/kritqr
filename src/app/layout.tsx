@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "QR Code Gratis",
     "Buat QR Code",
   ],
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

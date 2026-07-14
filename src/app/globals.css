@@ -42,3 +42,18 @@
     font-family: var(--font-sans, system-ui, sans-serif);
   }
 }
+
+@keyframes fadeScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@utility animate-fade-scale-in {
+  animation: fadeScaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
