@@ -123,7 +123,8 @@ className="flex-1 h-11 px-4 rounded-2xl border border-border bg-muted/50 text-sm
                 />
                 <button
                   onClick={generateQR}
-className="h-11 px-5 rounded-2xl bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 active:scale-[0.97] transition-all shadow-sm shadow-primary/20 flex items-center gap-2 shrink-0"
+                  aria-label="Generate"
+className="h-11 px-3 sm:px-5 rounded-2xl bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 active:scale-[0.97] transition-all shadow-sm shadow-primary/20 flex items-center gap-1.5 sm:gap-2 shrink-0"
                 >
                   <svg
                     className="w-4 h-4"
@@ -138,7 +139,7 @@ className="h-11 px-5 rounded-2xl bg-primary text-primary-foreground font-semibol
                       d="M9 12h6m-3-3v6m-7 4h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  Generate
+                  <span className="hidden sm:inline">Generate</span>
                 </button>
               </div>
               {error && (
